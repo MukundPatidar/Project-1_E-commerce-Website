@@ -1,0 +1,237 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black; /* Set background color to black */
+}
+
+/* Background */
+.login-background {
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e152f68-99a2-4f32-a7b0-f8224f5c805b/f9c3cdb7-b5cb-45ac-940d-e64b1d2bc788/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh; /* Adjusted height to fit About Us section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Overlay */
+.login-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Login container */
+.login-container {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Slightly transparent black */
+    padding: 60px 68px 40px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E50914;
+    font-weight: bold;
+}
+
+/* Login box */
+.login-box {
+    width: 100%;
+    text-align: left;
+}
+
+.login-box h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Input fields */
+.input-box {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555; /* Slightly lighter grey for input fields */
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* Sign In button */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.login-btn:hover {
+    background-color: #f40612;
+}
+
+/* Help options */
+.help-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.help-options label {
+    font-size: 0.9rem;
+}
+
+.help-options a {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.help-options a:hover {
+    text-decoration: underline;
+}
+
+/* Signup and recaptcha */
+.signup-now {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.signup-now a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-now a:hover {
+    text-decoration: underline;
+}
+
+.recaptcha-text {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+.recaptcha-text a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #111;
+    color: #841515;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #bc2323;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000;
+    color: #b3b3b3;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+/* FAQ Section */
+.faq-section {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.faq-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+/* Adjust spacing if necessary */
+.login-background {
+    margin-bottom: 0;
+}
